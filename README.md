@@ -1,19 +1,27 @@
 # robot
 
-This will run a simple robot with a webserver on a raspberry PI with the Adafruit Motor Hat.  I wrote this up for myself for fun and to help me remember how I set things up.
+My vehicle setup:
 
-High level overview can be found in this article: https://www.oreilly.com/learning/how-to-build-a-robot-that-sees-with-100-and-tensorflow
+Throttle 
+Pi --> i2c --> MCP4725 --> analog value --> vehicle throttle pin
+
+Brake
+
+
+Steering
+Gpio --> 
+
+
+This will run a vehicle with a webserver on a raspberry PI.  I wrote this up for myself for fun and to help me remember how I set things up.
 
 ## Hardware
 
 - Raspberry PI 3
 - 16GB (or larger) SIM Card
-- Adafruit Motor Hat (for wheels)
-- Any chassis with DC motors - for example: https://www.amazon.com/Emgreat-Chassis-Encoder-wheels-Battery/dp/B00GLO5SMY/ref=sr_1_2?ie=UTF8&qid=1486959207&sr=8-2&keywords=robot+chassis
-- Adafruit Servo Hat (for arms)
-- HC-SR04 sonars
-- Any stepper motor arm - for example: SainSmart DIY Control Palletizing Robot Arm for the arm (https://www.amazon.com/dp/B0179BTLZ2/ref=twister_B00YTW763Y?_encoding=UTF8&psc=1)
-- Raspberry PI compatible camera - for example: https://www.amazon.com/Raspberry-Pi-Camera-Module-Megapixel/dp/B01ER2SKFS/ref=sr_1_1?s=electronics&ie=UTF8&qid=1486960149&sr=1-1&keywords=raspberry+pi+camera
+- 
+- HC-SR04 sonars (TODO)
+- 
+- Raspberry PI compatible camera (TODO) - for example: https://www.amazon.com/Raspberry-Pi-Camera-Module-Megapixel/dp/B01ER2SKFS/ref=sr_1_1?s=electronics&ie=UTF8&qid=1486960149&sr=1-1&keywords=raspberry+pi+camera
 
 To get started, you should be able to make the robot work without the arm, sonar and servo hat.
 
@@ -46,12 +54,12 @@ You can modify the pins by making a robot.conf file.
 ### Wheels
 
 You can easily change this but this is what wheels.py expects
-
 - M1 - Front Left
 - M2 - Back Left (optional - leave unwired for 2wd chassis)
 - M3 - Back Right (optional - leave unwired for 2wd chassis)
 - M4 - Front Right 
 
+I need to change it to 
 
 ## Installation
 
